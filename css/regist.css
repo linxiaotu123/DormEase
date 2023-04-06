@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background-color: white;
+}
+
+#left{
+    width: 50vw;
+    height: 100vh;
+    /* background-color: red; */
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/regist-left-img.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:1023px){ 
+    #left{ 
+        display:none; 
+    } 
+} 
+
+#left>img{
+    width: 70%;
+    height: 70%;
+}
+
+#right{
+    width: 50vw;
+    height: 100vh;
+    /* background-color: blue; */
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@media(max-width:1023px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    #right{
+        width: 50vw;
+        height: 100vh;
+        /* background-color: blue; */
+        /* float: right; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+#logo-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo-box>img{
+    width: 55%;
+    height: 55%;
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotateZ(0deg);/*从0度开始*/
+	}
+	100%{
+		transform: rotateZ(360deg);/*360度结束*/
+	}
+}
+
+#logo-box>h1{
+   color: rgb(152, 152, 152);
+   letter-spacing:0.1rem;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+#input-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group>i{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.input-group>i>img{
+    position: relative;
+    top: 0.4rem;
+    left: 1.3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#return-login{
+    /* border: 1px solid white; */
+    white-space: nowrap;
+    word-wrap: break-word;
+    width: 40%;
+    margin: 1rem 0;
+}
+
+#return-login>a{
+    float: right;
+    text-decoration: none;
+    color: rgb(152, 152, 152);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#btn-box{
+    padding-left: 1.5rem;
+}
+
+#btn-box>input{
+    padding: 0;
+    margin: 0;
+    height: 2.2rem;
+    background-color: #00BFA6;
+    color: white;
+    letter-spacing:0.1rem;
+    border-radius: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: none;
+}
+
+#btn-box>input:hover{
+    cursor: pointer;
+    background-color: #26dac2;
+    border-bottom: none;
+}
+
+input{
+    outline: none;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid rgb(152, 152, 152);
+    margin-top: 1rem;
+    width: 17rem;
+    height: 2rem;
+    padding-left: 1.5rem;
+    letter-spacing:0.01rem;
+    caret-color: rgb(152, 152, 152);
+    color: rgb(152, 152, 152);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input::-webkit-input-placeholder{
+    color: rgb(152, 152, 152);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+}

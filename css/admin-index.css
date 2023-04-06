@@ -1,0 +1,49 @@
+.active{
+    background-color: rgba(109, 109, 109, 0.1);
+}
+
+a:hover{
+    background-color: rgba(109, 109, 109, 0.1);
+}
+
+/* 添加弹出框样式 */
+.alertBody>.am-form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.alertBody>.am-form-group>input{
+    width: 80%;
+    margin-left: 1rem;
+}
+
+.nav-bg{
+    background-image: url(../img/nav-bg.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 80%;
+}
+
+#rotation-chart{
+    display: block;
+    height: 450px;
+    /* border: 1px red solid; */
+    border-radius: 1rem;
+}
+
+img{
+    border-radius: 1rem;
+}
+
+/* 欢迎语 */
+.hello-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.541);
+    text-shadow: 5px 5px 5px #4092fd79;
+}
